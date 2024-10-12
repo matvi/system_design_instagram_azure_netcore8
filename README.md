@@ -25,10 +25,9 @@ Load Balancer: Security: Protects the system by distributing traffic across mult
 
 Azure WebApps: Hosts the application with automatic scaling, ensuring it can handle millions of users without downtime.
 
-
-Link to my Linkedin account:
-https://www.linkedin.com/pulse/system-design-instagram-implementation-azure-net-8-david-mata-viejo-8r7he
-
 Continuous Integration and Continuous Deployment (CI/CD): Automates updates and feature rollouts, ensuring the system stays up to date without disruption.
 
 By leveraging these Azure services, the platform can efficiently handle high user traffic, provide low-latency feed loads, and offer a scalable architecture that grows with user demand. The combination of caching, global distribution, load balancing, and microservices ensures a fast, reliable, and responsive experience for all users
+
+Link to my Linkedin account:
+https://www.linkedin.com/pulse/system-design-instagram-implementation-azure-net-8-david-mata-viejo-8r7he
