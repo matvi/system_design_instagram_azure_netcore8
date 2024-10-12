@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "6f07fb12-3de9-4ec7-91d7-a0c3f2bbc597",
+		"name": "InstagramSD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2728839"
+	},
+	"item": [
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "Create Post/Upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/dmata/Desktop/Screenshot 2024-02-12 at 1.22.46 a.m..png"
+								},
+								{
+									"key": "postTitle",
+									"value": "myPosttitle",
+									"type": "text"
+								},
+								{
+									"key": "postText",
+									"value": "myPostBodyText",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "david",
+									"type": "text"
+								},
+								{
+									"key": "userid",
+									"value": "1e09d351-d1de-4918-804f-f7f7f867999e",
+									"type": "text"
+								},
+								{
+									"key": "UserProfileImageUrl",
+									"value": "https://myuserprofileurl",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{postUrl}}/Post/Upload",
+							"host": [
+								"{{postUrl}}"
+							],
+							"path": [
+								"Post",
+								"Upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Posts/ Delete All",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7087/Post",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7087",
+							"path": [
+								"Post"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "postProcessor",
+			"item": [
+				{
+					"name": "getPostsIdsByUserId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5002/Post?userId=12c3f731-1ed5-45fa-b76a-d982f6aaecd6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"Post"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "12c3f731-1ed5-45fa-b76a-d982f6aaecd6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "like",
+			"item": [
+				{
+					"name": "Unlike post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n  \"postId\": \"ee54c4a7-5cbc-4819-c14b-08dc54f80a0d\"\n}"
+						},
+						"url": {
+							"raw": "{{likeUrl}}}/Like/unlike",
+							"host": [
+								"{{likeUrl}}}"
+							],
+							"path": [
+								"Like",
+								"unlike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n  \"postId\": \"3e4eb183-b2e1-4a52-301b-08dc53ad3f6a\"\n}"
+						},
+						"url": {
+							"raw": "{{likeUrl}}/Like",
+							"host": [
+								"{{likeUrl}}"
+							],
+							"path": [
+								"Like"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rank",
+			"item": [
+				{
+					"name": "Rank Create FriendLists",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n\n    \"userId\": \"1fa85f64-5717-4562-b3fc-2c963f66afa6\",\n    \"friends\": [\n      \"2fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"4fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    ]\n  },\n  {\n\n    \"userId\": \"2fa85f64-5717-4562-b3fc-2c963f66afa6\",\n    \"friends\": [\n      \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    ]\n  },\n  {\n\n    \"userId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n    \"friends\": [\n      \"4fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    ]\n  },\n  {\n\n    \"userId\": \"4fa85f64-5717-4562-b3fc-2c963f66afa6\",\n    \"friends\": [\n      \"2fa85f64-5717-4562-b3fc-2c963f66afa6\",\n      \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\n    ]\n  }\n\n\n]"
+						},
+						"url": {
+							"raw": "{{RankUrl}}/Rank",
+							"host": [
+								"{{RankUrl}}"
+							],
+							"path": [
+								"Rank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rank/getListOfFriendsByUserId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7218/Rank?userId=1fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Rank"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1fa85f64-5717-4562-b3fc-2c963f66afa6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rank/DeleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7218/Rank",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Rank"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feed",
+			"item": [
+				{
+					"name": "Feed / get feed by userId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7230/Feed/1fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7230",
+							"path": [
+								"Feed",
+								"1fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

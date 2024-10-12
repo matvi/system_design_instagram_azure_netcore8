@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  postservice:
+    image: ${DOCKER_REGISTRY-}postservice
+    build:
+      context: .
+      dockerfile: PostService/Dockerfile
+
+  postprocessor:
+    image: ${DOCKER_REGISTRY-}postprocessor
+    build:
+      context: .
+      dockerfile: PostProcessor/Dockerfile
+
+
+  feedservice:
+    image: ${DOCKER_REGISTRY-}feedservice
+    build:
+      context: .
+      dockerfile: ../FeedService/Dockerfile
+
+
+  friendservice:
+    image: ${DOCKER_REGISTRY-}friendservice
+    build:
+      context: .
+      dockerfile: ../FriendService/Dockerfile
+
+
+  likeservice:
+    image: ${DOCKER_REGISTRY-}likeservice
+    build:
+      context: .
+      dockerfile: ../LikeService/Dockerfile
+
+
+  rankservice:
+    image: ${DOCKER_REGISTRY-}rankservice
+    build:
+      context: .
+      dockerfile: ../RankService/Dockerfile
+

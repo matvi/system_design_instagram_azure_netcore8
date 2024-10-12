@@ -1,0 +1,116 @@
+﻿<Properties StartupConfiguration="{4FE78382-F370-4CC8-BFAA-EDAE0548D65A}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostService/Services/PostInstagramService.cs" relfile="PostService/Services/PostInstagramService.cs" line="138" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/Common/Tasks/CronJobServiceBase.cs" relfile="Common/Tasks/CronJobServiceBase.cs" line="74" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostProcessor/Repositories/RedisCacheRepository.cs" relfile="PostProcessor/Repositories/RedisCacheRepository.cs" line="23" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostProcessor/Repositories/RedisCacheRepository.cs" relfile="PostProcessor/Repositories/RedisCacheRepository.cs" line="40" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostProcessor/Repositories/RedisCacheRepository.cs" relfile="PostProcessor/Repositories/RedisCacheRepository.cs" line="42" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostProcessor/Services/PostService.cs" relfile="PostProcessor/Services/PostService.cs" line="19" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostProcessor/Controllers/PostController.cs" relfile="PostProcessor/Controllers/PostController.cs" line="21" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/FeedService/Services/NewsFeedService.cs" line="52" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/FeedService/Controllers/FeedController.cs" line="21" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostService/Factories/EventProcessorFactory.cs" relfile="PostService/Factories/EventProcessorFactory.cs" line="21" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostService/TaskServices/PostConsumerTaskService.cs" relfile="PostService/TaskServices/PostConsumerTaskService.cs" line="45" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostService/Services/PostInstagramService.cs" relfile="PostService/Services/PostInstagramService.cs" line="69" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/InstagramSD/PostService/Factories/EventProcessorFactory.cs" relfile="PostService/Factories/EventProcessorFactory.cs" line="31" column="1" />
+    <Breakpoint file="/Users/dmata/Projects/LikeService/Controllers/LikeController.cs" line="46" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../LikeService/Controllers/LikeController.cs">
+    <Files>
+      <File FileName="../LikeService/Controllers/LikeController.cs" Line="46" Column="1" />
+      <File FileName="../LikeService/Program.cs" Line="26" Column="39" />
+      <File FileName="../LikeService/appsettings.json" Line="1" Column="1" />
+      <File FileName="../LikeService/Contracts/LikePostRequest.cs" Line="6" Column="9" />
+      <File FileName="../LikeService/Contracts/UnlikePostResponse.cs" Line="8" Column="2" />
+      <File FileName="../LikeService/Contracts/LikePostResponse.cs" Line="1" Column="1" />
+      <File FileName="PostService/Tasks/PostConsumerHostedService.cs" Line="26" Column="1" />
+      <File FileName="Common/Tasks/CronJobServiceBase.cs" Line="10" Column="27" />
+      <File FileName="PostService/Settings/PostConsumerHostedServiceSettings.cs" Line="6" Column="48" />
+      <File FileName="PostProcessor/Tasks/ConsumerTaskHostedService.cs" Line="1" Column="1" />
+      <File FileName="PostService/TaskServices/IPostConsumerTaskService.cs" Line="7" Column="44" />
+      <File FileName="PostService/TaskServices/PostConsumerTaskService.cs" Line="54" Column="108" />
+      <File FileName="PostService/Program.cs" Line="71" Column="3" />
+      <File FileName="PostProcessor/TaskServices/ConsumerTaskService.cs" Line="13" Column="17" />
+      <File FileName="Common/ServiceBus/IServiceBusConsumer.cs" Line="3" Column="17" />
+      <File FileName="PostProcessor/TaskServices/IConsumerTaskService.cs" Line="7" Column="19" />
+      <File FileName="PostService/Services/ILikeCreatedProcessor.cs" Line="1" Column="1" />
+      <File FileName="PostService/Services/LikeCreatedProcessor.cs" Line="19" Column="40" />
+      <File FileName="Common/ServiceBus/ServiceBusConsumer.cs" Line="59" Column="1" />
+      <File FileName="PostService/appsettings.json" Line="26" Column="44" />
+      <File FileName="PostProcessor/appsettings.json" Line="28" Column="44" />
+      <File FileName="PostService/PostService.http" Line="1" Column="1" />
+      <File FileName="Common/Settings/ServiceBusConsumerSettingsBase.cs" Line="4" Column="54" />
+      <File FileName="Common/Settings/ServiceBusSettings.cs" Line="7" Column="42" />
+      <File FileName="PostService/Settings/PostServiceBusConsumerSettings.cs" Line="6" Column="78" />
+      <File FileName="PostProcessor/Settings/PostServiceBusConsumerSettings.cs" Line="6" Column="54" />
+      <File FileName="Common/Settings/HostedServiceTaskSettingsBase.cs" Line="1" Column="1" />
+      <File FileName="PostService/Services/PostServiceBusConsumer.cs" Line="8" Column="53" />
+      <File FileName="PostService/Repositories/IPostRepository.cs" Line="5" Column="22" />
+      <File FileName="PostService/Repositories/PostRepository.cs" Line="7" Column="41" />
+      <File FileName="PostService/Services/IUnlikeCreatedProcessorService.cs" Line="4" Column="19" />
+      <File FileName="PostService/Services/UnlikeCreatedProcessorService.cs" Line="1" Column="7" />
+      <File FileName="PostService/Services/UnlikePostServiceBusConsumer.cs" Line="12" Column="10" />
+      <File FileName="PostService/Settings/UnlikePostServiceBusConsumerSettings.cs" Line="6" Column="51" />
+      <File FileName="../LikeService/Contracts/UnlikePostRequest.cs" Line="1" Column="1" />
+      <File FileName="../LikeService/Repositories/LikeRepository.cs" Line="1" Column="1" />
+      <File FileName="Common/ServiceBus/IHandleServiceBusMessage.cs" Line="7" Column="45" />
+      <File FileName="Domain/Enums/FollowType.cs" Line="1" Column="1" />
+      <File FileName="Domain/Enums/EventType.cs" Line="11" Column="3" />
+      <File FileName="Common/Strategies/IEventProcessorStrategy.cs" Line="4" Column="42" />
+      <File FileName="Common/Factories/IEventProcessorFactory.cs" Line="11" Column="39" />
+      <File FileName="PostService/Factories/EventProcessorFactory.cs" Line="31" Column="1" />
+      <File FileName="PostService/Models/Result.cs" Line="1" Column="1" />
+      <File FileName="Common/Strategies/EventProcessors/PostProcessorStrategy.cs" Line="8" Column="59" />
+      <File FileName="Domain/interfaces/IInstagramEvent.cs" Line="6" Column="26" />
+      <File FileName="Domain/EventMessages/PostCreated.cs" Line="7" Column="15" />
+      <File FileName="PostService/Strategies/PostEventProcessorStrategy.cs" Line="6" Column="67" />
+      <File FileName="PostService/Controllers/PostController.cs" Line="1" Column="1" />
+      <File FileName="PostService/Services/PostInstagramService.cs" Line="69" Column="1" />
+      <File FileName="../LikeService/Services/ILikeService.cs" Line="9" Column="35" />
+      <File FileName="../LikeService/Services/LikeService.cs" Line="9" Column="2" />
+      <File FileName="../LikeService/Contracts/TestRequest.cs" Line="1" Column="1" />
+      <File FileName="../LikeService/Contracts/TestResponse.cs" Line="6" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InstagramSD">
+            <Node name="Common">
+              <Node name="Enums" expanded="True" />
+            </Node>
+            <Node name="LikeService">
+              <Node name="Controllers">
+                <Node name="LikeController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+            </Node>
+            <Node name="PostService">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Factories" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Strategies" expanded="True" />
+              <Node name="Tasks" expanded="True" />
+              <Node name="TaskServices" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PostProcessor PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.PostService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

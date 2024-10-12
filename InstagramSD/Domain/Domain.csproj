@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EventMessages\" />
+    <None Remove="Models\" />
+    <None Remove="Dtos\" />
+    <None Remove="Enums\" />
+    <None Remove="Factories\" />
+    <None Remove="Strategies\" />
+    <None Remove="interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventMessages\" />
+    <Folder Include="Models\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Factories\" />
+    <Folder Include="Strategies\" />
+    <Folder Include="interfaces\" />
+  </ItemGroup>
+</Project>

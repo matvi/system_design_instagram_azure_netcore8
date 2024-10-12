@@ -1,0 +1,7 @@
+﻿@PostProcessor_HostAddress = http://localhost:5196
+
+GET {{PostProcessor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
